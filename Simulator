@@ -1,0 +1,11 @@
+function Error=Simulator(I,changePoint,De,t)
+[m,n]=size(I);
+%generation of White Noise based on Normal Distribution
+WN=normrnd(0,2.55,[m,n]);
+    if t<=changePoint
+        Sim=I+WN;
+            else
+        Sim=De+WN;
+    end
+Error=Sim-I;
+end
