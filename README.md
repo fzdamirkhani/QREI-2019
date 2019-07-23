@@ -200,7 +200,7 @@ end
 ## Simulation study
 The simulation study is conducted for 120 testing conditions (2 fault locations as the best- and the worst-case scenarios, 3 fault dimensions, and 20 intensity shifts) in the case of having one fault in the image, and the results are compared to those reported by Koosha et al.13 in Tables 2 to 7. The results in which the proposed approach is superior are highlighted in these tables to facilitate comparison by readers. 
 
-|                    |          5 * 5         |          10 * 10         |         15 * 15          |
+| **SingleFault.m**  |          5 * 5         |          10 * 10         |         15 * 15          |
 |--------------------|:----------------------:|:------------------------:|:------------------------:|
 | Best case senario  | X1=1, X2=5, Y1=1, Y2=5 | X1=1, X2=10, Y1=1, Y2=10 | X1=1, X2=15, Y1=1, Y2=15 |
 | worst case senario | X1=3, X2=7, Y1=3, Y2=7 | X1=3, X2=12, Y1=3, Y2=12 | X1=3, X2=17, Y1=3, Y2=17 |
