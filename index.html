@@ -163,3 +163,38 @@ Est250=<span class="hljs-built_in">zeros</span>(<span class="hljs-number">250</s
 <span class="hljs-keyword">end</span>
 </code></pre><h2 id="simulation-study">Simulation study</h2>
 <p>The <code>SingleFault.m</code>, <code>MultipleFault.m</code>, and <code>CircularFault.m</code> files are used in the simulation studies with following settings:</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-yj5y{background-color:#efefef;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-y698{background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fckf{background-color:#efefef;border-color:inherit;text-align:right;vertical-align:top}
+.tg .tg-ao2g{border-color:#333333;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-y698">MultipleFault.m</th>
+    <th class="tg-yj5y">5 * 5</th>
+    <th class="tg-yj5y">10 * 10 </th>
+    <th class="tg-fckf">15 * 15</th>
+  </tr>
+  <tr>
+    <td class="tg-yj5y">Best case senario</td>
+    <td class="tg-c3ow">X11=1, X12=5<br>Y11=1, Y12=5<br>X21=246, X22=250<br>Y21=246, Y22=250</td>
+    <td class="tg-c3ow">X11=1, X12=10<br>Y11=1, Y12=10<br>X21=241, X22=250<br>Y21=241, Y22=250</td>
+    <td class="tg-c3ow">X11=1, X12=15<br> Y11=1, Y12=15<br>X21=236, X22=250<br>Y21=236, Y22=250</td>
+  </tr>
+  <tr>
+    <td class="tg-yj5y">Worst case senario</td>
+    <td class="tg-c3ow">X11=3, X12=7<br>Y11=3, Y12=7<br>X21=243, X22=247<br>Y21=243, Y22=247</td>
+    <td class="tg-ao2g">X11=3, X12=12<br>Y11=3, Y12=12<br>X21=238, X22=247<br>Y21=248, Y22=247</td>
+    <td class="tg-c3ow">X11=3, X12=17<br>Y11=3, Y12=17<br>X21=233, X22=247<br>Y21=233, Y22=247</td>
+  </tr>
+  <tr>
+    <td class="tg-8jgo" colspan="4">Shifts in intensity values: [-10,-1],[1,10]<br>Change point: 5</td>
+  </tr>
+</table>
