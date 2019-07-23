@@ -207,5 +207,5 @@ The simulation study is conducted for 120 testing conditions (2 fault locations 
 
 | MultipleFault.m    |                                                                    |      Are     |  Cool |
 |--------------------|--------------------------------------------------------------------|:------------:|------:|
-| Best case senario  | X11=1, X12=5,   Y11=1, Y12=5, \n X21=246, X22=250,  Y21=246, Y22=250 | left-aligned | $1600 |
+| Best case senario  | X11=1, X12=5,   Y11=1, Y12=5, "\n" X21=246, X22=250,  Y21=246, Y22=250 | left-aligned | $1600 |
 | Worst case senario |                                                                    |   centered   |   $12 |
