@@ -1,4 +1,5 @@
 # A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data
+Farzad Amirkhani, Amirhossein Amiri
 
 ## introduction 
 The spread of emerging technologies and advances in measuring devices has led to an increase in the amount of data obtained from manufacturing systems in recent years . For instance, the use of sensors and machine vision systems in the manufacturing companies has led to a massive amount of data, which extracting information from this data and exploiting them effectively is one of the most fundamental challenges of data science and statistical process control.  
