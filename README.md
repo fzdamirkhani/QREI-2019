@@ -202,7 +202,7 @@ The simulation study is conducted for 120 testing conditions (2 fault locations 
 
 | **SingleFault.m**  |          5 * 5         |          10 * 10         |         15 * 15          |
 |--------------------|----------------------  |------------------------  |------------------------  |
-| Best case senario  | X1=1, X2=5, Y1=1, Y2=5 | X1=1, X2=10, Y1=1, Y2=10 | X1=1, X2=15, Y1=1, Y2=15 |
+| Best case senario  | <p> X1=1, X2=5</p> <p>Y1=1, Y2=5</p> | <p>X1=1, X2=10</p> <p>Y1=1, Y2=10</p> | X1=1, X2=15, Y1=1, Y2=15 |
 | worst case senario | X1=3, X2=7, Y1=3, Y2=7 | X1=3, X2=12, Y1=3, Y2=12 | X1=3, X2=17, Y1=3, Y2=17 |
 
 | MultipleFault.m    |                            5 * 5                            |                             10 * 10                              |                                                         15 * 15 |
