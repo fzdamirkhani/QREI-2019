@@ -198,7 +198,7 @@ end
 ~~~
 
 ## Simulation study
-The simulation study is conducted for 120 testing conditions (2 fault locations as the best- and the worst-case scenarios, 3 fault dimensions, and 20 intensity shifts) in the case of having one fault in the image, and the results are compared to those reported by Koosha et al.13 in Tables 2 to 7. The results in which the proposed approach is superior are highlighted in these tables to facilitate comparison by readers. 
+The `SingleFault.m`, `MultipleFault.m`, and `CircularFault.m` files are used in the simulation studies with following settings:
 
 | **SingleFault.m**  |          5 * 5         |          10 * 10         |         15 * 15          |
 |--------------------|:----------------------:  |:------------------------:  |:------------------------:  |
