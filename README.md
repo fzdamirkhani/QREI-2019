@@ -5,9 +5,8 @@ Farzad Amirkhani, Amirhossein Amiri
 The spread of emerging technologies and advances in measuring devices has led to an increase in the amount of data obtained from manufacturing systems in recent years . For instance, the use of sensors and machine vision systems in the manufacturing companies has led to a massive amount of data, which extracting information from this data and exploiting them effectively is one of the most fundamental challenges of data science and statistical process control.  
 The codes in this repository are presented to monitor image data based on control charts and to estimate the change point in case of receiving an out-of-control alarm. 
 
-After pre-processing steps such as removing the background and transforming to a greyscale image, the `Tile_250.jpg` in repository is resized from 3264×2448 pixels to 250×250 pixels, and it is considered as the nominal image. To simulate captured images, white noise based on a normal distribution with a mean of *μ*=0 and *σ*=2.55 is added to the nominal image. In the case of having real images from the production line, *μ* and *σ* should be estimated based on Phase I studies.
-
 ## Codes
+After pre-processing steps such as removing the background and transforming to a greyscale image, the `Tile_250.jpg` in repository is resized from 3264×2448 pixels to 250×250 pixels, and it is considered as the nominal image. To simulate captured images, white noise based on a normal distribution with a mean of *μ*=0 and *σ*=2.55 is added to the nominal image. In the case of having real images from the production line, *μ* and *σ* should be estimated based on Phase I studies.
 In simulation study single, multiple and circular defects are imposed at a specific part of image and the performance of proposed method is evaluated as well. This repository includes three .m files for this aim, namely **SingleFault.m**, **MultiFault.m**, and **CircularFault.m**. The first six line of these files are same as below: 
 ~~~
 clc;clear;
