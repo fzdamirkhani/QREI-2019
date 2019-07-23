@@ -20,8 +20,7 @@ In above mentioned codes, after initialization, which include `clc` and `clear` 
 
 `De` matrix is created based on the `I` matrix, and in the next steps the shift in intensity values at given coordinates are imposed to it as defective image. The change point and the shift in intensity values are set equal to 5. (which can be changed based on simulation purpose.)
 
-
-## The SingleFault.m file 
+### The SingleFault.m file 
 This .m file is used to generate a defect with specific dimension at the specific part of image. The location of defect is  determined in the image with its coordinates, that is X1, X2, Y1 and Y2 (Here, `X1=1`, `X2=5`, `Y1=1`, `Y2=5` is considered as an instance), and shift in intensity value `Delta` is imposed to specified part of image.
 `Idn`  is a matrix in which the pixels with defective parts takes 1, and at the other locations it takes 0. this variable is used to calculate similarity dice index in next parts of code.
 ~~~
@@ -31,7 +30,7 @@ De(X1:X2,Y1:Y2)=De(X1:X2,Y1:Y2)+Delta;
 Idn=zeros(m,n);
 Idn(X1:X2,Y1:Y2)=1;
 ~~~
-## The MultipleFault.m file 
+### The MultipleFault.m file 
 This code is simillar to **SingleFault.m** , the only difference is that in this code, instead of creating single defect, two defects are imposed to image in different parts of the it.
 
 ~~~
@@ -49,7 +48,7 @@ Idn(X21:X22,Y21:Y22)=1;
 
 Result=SMPSD(I,De,Idn,changePoint)
 ~~~
-## The CircularFault.m file 
+### The CircularFault.m file 
 In this .m file, a circular defect with center cooardinate of (CX,CY) and radius of R is imposed to image.
 ~~~
 R=10;
@@ -67,7 +66,7 @@ end
 Result=SMPSD(I,De,Idn,changePoint)
 ~~~
 
-## The SMPSD file 
+### The SMPSD file 
 This function gets the `I`,`De`,`Idn`, and `changePoint` values and return `Result` value as below:
 ~~~
 function Result=SMPSD(I,De,Idn,changePoint)
@@ -152,7 +151,7 @@ Result=[mean(RL)-changePoint
     std(RL) median(Ch) mean(Ch) std(Ch) numel(find(Ch==0))/Maxit (numel(find(Ch<=2 &Ch>0 ))+numel(find(Ch>=-2 & Ch<0 )))/Maxit  ...
     numel(find(Ch>2))/Maxit mean(dice) std(dice)];
  ~~~~~
-## The Simulator.mat file 
+### The Simulator.mat file 
 This function gives intensity values of Nominal image (`I`), intensity values of image with fault (`De`), `change point` and `t` and generates the `Error` matrix as a result.
 ~~~~ 
 function Error=Simulator(I,changePoint,De,t)
@@ -168,7 +167,7 @@ Error=Sim-I;
 end 
 ~~~~
  
-## The Seperator.mat file 
+### The Seperator.mat file 
 The purpose of using this m file is to separate the image into 5 * 5 squares and then convert them into vectors. It gets `Error` matrix as input and gives `TR` matrix as a result.
 ~~~~
 function TR=Seperator(Error)
@@ -183,7 +182,7 @@ function TR=Seperator(Error)
         end
 end
 ~~~~
-## The Jointer.mat file 
+### The Jointer.mat file 
 This code gets `Regin` matrix as input and gives `Est250` matrix as a result.
 ~~~
 function Est250=Jointer(Regin)
