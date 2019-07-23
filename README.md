@@ -1,13 +1,6 @@
 # A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data
 Farzad Amirkhani, Amirhossein Amiri
 
-## Table of contents
-1. [Introduction](##Introduction)
-2. [Codes](##Codes)
-    2.1.[The SingleFault.m file](###The SingleFault.m file)
-    2.2.[The MultipleFault.m file](###The MultipleFault.m file)
-3. [Another paragraph](#paragraph2)
-
 ## Introduction 
 The spread of emerging technologies and advances in measuring devices has led to an increase in the amount of data obtained from manufacturing systems in recent years . For instance, the use of sensors and machine vision systems in the manufacturing companies has led to a massive amount of data, which extracting information from this data and exploiting them effectively is one of the most fundamental challenges of data science and statistical process control.  
 The codes in this repository are presented to monitor image data based on control charts and to estimate the change point in case of receiving an out-of-control alarm. 
@@ -59,7 +52,7 @@ Result=SMPSD(I,De,Idn,changePoint)
 In this .m file, a circular defect with center cooardinate of (CX,CY) and radius of R is imposed to image.
 ~~~
 R=10;
-CX=50;CY=50;
+CX=125;CY=125;
 Idn=zeros(m,n);
 for i=1:250
     for j=1:250
@@ -207,3 +200,8 @@ end
 ## Simulation study
 The simulation study is conducted for 120 testing conditions (2 fault locations as the best- and the worst-case scenarios, 3 fault dimensions, and 20 intensity shifts) in the case of having one fault in the image, and the results are compared to those reported by Koosha et al.13 in Tables 2 to 7. The results in which the proposed approach is superior are highlighted in these tables to facilitate comparison by readers. 
 
+
+|                    |         5 * 5         |         10 * 10         |         15 * 15         |
+|--------------------|:---------------------:|:-----------------------:|:-----------------------:|
+| Best case senario  | X1=1, X2=5 Y1=1, Y2=5 | X1=1, X2=10 Y1=1, Y2=10 | X1=1, X2=15 Y1=1, Y2=15 |
+| worst case senario | X1=3, X2=7 Y1=3, Y2=7 | X1=3, X2=12 Y1=3, Y2=12 | X1=3, X2=17 Y1=3, Y2=17 |
