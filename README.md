@@ -2,10 +2,10 @@
 Farzad Amirkhani, Amirhossein Amiri
 
 ## Table of contents
-1. [Introduction](## Introduction)
+1. [Introduction](##Introduction)
 2. [Codes](##Codes)
-    2.1. [The SingleFault.m file] (### The SingleFault.m file )
-    2.2. [The MultipleFault.m file] (### The MultipleFault.m file)
+    2.1. [The SingleFault.m file] (###The SingleFault.m file )
+    2.2. [The MultipleFault.m file] (###The MultipleFault.m file)
 ](###The SingleFault.m file )
 
 3. [Another paragraph](#paragraph2)
