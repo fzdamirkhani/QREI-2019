@@ -3,7 +3,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>
 The spread of emerging technologies and advances in measuring devices has led to an increase in the amount of data obtained from manufacturing systems in recent years. For instance, the use of sensors and machine vision systems in the manufacturing companies has led to a massive amount of data, which extracting information from this data and exploiting them effectively is one of the most fundamental challenges of data science and statistical process monitoring.
-The codes in this repository are presented to monitor image data and post-signal diagnostic procedures (change point estimation and fault location identification) which are related to the paper entitled A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data. </p>
+The codes in this repository are presented to monitor image data and post-signal diagnostic procedures (change point estimation and fault location identification) which are related to the paper entitled <strong>A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data</strong>. </p>
 <h2 id="codes">Codes</h2>
 <p >After removing the background, the obtained image <strong>Tile_250.jpg</strong> is considered as the nominal image. In simulation studies, single, multiple and circular faults are imposed at a specific location of the image and  performance of the proposed method is evaluated for which this repository including three .m files namely <strong>SingleFault.m</strong>, <strong>MultiFault.m</strong>, and <strong>CircularFault.m</strong> is provided. The first six line of these files are the same as below:
 <pre><code>clc;
