@@ -1,4 +1,4 @@
-# <h1 align='center'>A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data</h1>
+<h1 align='center'>A Novel Framework for Spatiotemporal Monitoring and Post-Signal Diagnosis of Processes with Image Data</h1>
 <p align='center'>Farzad Amirkhani, Amirhossein Amiri</p>
 <h2 id="introduction">Introduction</h2>
 <p>
